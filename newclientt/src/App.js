@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import ModalComponent from '../components/modal'; // Update the path accordingly
 
-function App() {
+const MyComponent = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setModalOpen(true);
+    // You can add additional logic here if needed
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn hi
-        </a>
-      </header>
+    <div>
+      <p>Are you Gwenny?</p>
+
+      <button
+        className="App-link"
+        onClick={handleButtonClick}
+      >
+        If yes, CLICK HERE
+      </button>
+
+      <ModalComponent
+        isOpen={isModalOpen}
+        onRequestClose={handleCloseModal}
+      />
     </div>
   );
-}
+};
 
-export default App;
+export default MyComponent;
