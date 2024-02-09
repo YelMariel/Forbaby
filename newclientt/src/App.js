@@ -29,7 +29,7 @@ function App() {
 
       {showMessage && (
         <p>HI LOVE! seems simple yea? I am trying to get back on my track! Anyways! 
-         Can you be my valentine?</p>
+        </p>
       
       )}
     <button
