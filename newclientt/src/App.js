@@ -40,7 +40,7 @@ function App() {
       </button>
 
            {showMessage1 && (
-        <p>HI LOVE! seems simple yea? I am trying to get back on my track! Anyways! 
+        <p>
          Can you be my valentine?</p>
       
       )}
