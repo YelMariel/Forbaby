@@ -3,9 +3,13 @@ import './App.css';
 
 function App() {
    const [showMessage, setShowMessage] = useState(false);
+   const [showMessage1, setShowMessage1] = useState(false);
 
   const handleButtonClick = () => {
     setShowMessage(true);
+  };
+   const handleButtonClick1 = () => {
+    setShowMessage1(true);
   };
 
   return (
@@ -24,8 +28,21 @@ function App() {
       </button>
 
       {showMessage && (
-        <p>HI LOVE! seems simple yea? I am trying to get back on my track! Anyways!
+        <p>HI LOVE! seems simple yea? I am trying to get back on my track! Anyways! 
          Can you be my valentine?</p>
+      
+      )}
+    <button
+        className="App-button"
+        onClick={handleButtonClick1}
+      >
+         CLICKED HERE AGAIN!
+      </button>
+
+           {showMessage1 && (
+        <p>HI LOVE! seems simple yea? I am trying to get back on my track! Anyways! 
+         Can you be my valentine?</p>
+      
       )}
       </header>
     </div>
