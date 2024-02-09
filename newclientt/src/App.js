@@ -24,7 +24,8 @@ function App() {
       </button>
 
       {showMessage && (
-        <p>Can you be my valentine?</p>
+        <p>HI LOVE! seems simple yea? I am trying to get back on my track! Anyways!
+         Can you be my valentine?</p>
       )}
       </header>
     </div>
